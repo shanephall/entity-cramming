@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #0b0b0b;
+  color: #fce9c8;
+  background-image: radial-gradient(ellipse at center, #1c1c1c 0%, #0b0b0b 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff3c00;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-style: italic;
+  color: #c7c7c7;
+}
+
+.poster {
+  width: 100%;
+  border: 5px solid #ff3c00;
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.5);
+  margin: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #ff3c00;
+  border-bottom: 2px solid #ff3c00;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 3rem;
+}
+
+.trailer-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.trailer-thumb {
+  width: 100%;
+  border: 4px solid #000;
+  box-shadow: 0 0 12px #ff3c00aa;
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal video {
+  width: 90%;
+  max-width: 720px;
+  border: 5px solid #ff3c00;
+}
+
+.modal button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.static-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 2;
+}
+
+.static-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: flicker 0.5s ease-in-out forwards;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}

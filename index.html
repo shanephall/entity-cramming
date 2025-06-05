@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entity Cramming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ENTITY CRAMMING</h1>
+      <p class="tagline">A Charles Band Production Starring Jeffrey Combs & Barbara Crampton</p>
+    </header>
+
+    <main>
+      <img src="assets/poster.jpg" alt="Entity Cramming Poster" class="poster"/>
+
+      <section class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+          When a group of strangers find themselves trapped in a mysterious dimension, every square foot fills with something else—until there's no room left.
+          In this surreal and grisly tale of supernatural density, death is not optional. It’s inevitable. ENTITY CRAMMING... it's gonna be tight.
+        </p>
+      </section>
+
+      <section class="details">
+        <h2>Cast & Crew</h2>
+        <ul>
+          <li><strong>Director:</strong> Charles Band</li>
+          <li><strong>Starring:</strong> Jeffrey Combs, Barbara Crampton</li>
+          <li><strong>Genre:</strong> Horror / Supernatural / Absurdist</li>
+          <li><strong>Coming Soon:</strong> VHS + Betamax + Screambox</li>
+        </ul>
+      </section>
+
+      <section class="trailer">
+        <h2>Watch the Trailer</h2>
+        <div class="trailer-wrapper" onclick="playTrailer()">
+          <img src="assets/trailer-thumbnail.jpg" alt="Trailer thumbnail" class="trailer-thumb"/>
+          <div class="play-button">▶</div>
+        </div>
+
+        <div id="trailerModal" class="modal">
+          <div class="static-overlay">
+            <img src="assets/vhs-static.gif" alt="static" />
+          </div>
+          <video controls autoplay>
+            <source src="assets/fake-trailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <button onclick="closeTrailer()">×</button>
+        </div>
+      </section>
+
+      <section class="bonus">
+        <h2>Collectible VHS Packaging</h2>
+        <img src="assets/vhs-cover.jpg" alt="VHS Cover" class="poster" />
+        <p>Limited edition box art for fans and collectors. Download the full-resolution version and print your own case sleeve.</p>
+        <a href="assets/vhs-cover.jpg" download>Download VHS Cover</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Full Moon Features. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

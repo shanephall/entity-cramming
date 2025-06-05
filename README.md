@@ -1,0 +1,1 @@
+N.B. Take this only as seriously as you want to. A fan-fiction ode to my favorite studio Full Moon Productions and Charles Band.  Credit to my son for teaching me the term entity cramming, everything else is GenAI.
